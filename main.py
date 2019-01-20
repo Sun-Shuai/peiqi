@@ -10,7 +10,7 @@
 from turtle import *
 
 
-def nose(x, y):
+def draw_nose(x, y):
     pu()
     goto(x, y)
     pd()
@@ -53,7 +53,7 @@ def nose(x, y):
     end_fill()
 
 
-def head(x, y):
+def draw_head(x, y):
     color((255, 155, 192), "pink")
     pu()
     goto(x, y)
@@ -85,7 +85,7 @@ def head(x, y):
     end_fill()
 
 
-def ears(x, y):
+def draw_ears(x, y):
     color((255, 155, 192), "pink")
     pu()
     goto(x, y)
@@ -111,7 +111,7 @@ def ears(x, y):
     end_fill()
 
 
-def eyes(x, y):
+def draw_eyes(x, y):
     color((255, 155, 192), "white")
     pu()
     seth(90)
@@ -157,7 +157,7 @@ def eyes(x, y):
     end_fill()
 
 
-def cheek(x, y):
+def draw_cheek(x, y):
     color((255, 155, 192))
     pu()
     goto(x, y)
@@ -168,7 +168,7 @@ def cheek(x, y):
     end_fill()
 
 
-def mouth(x, y):
+def draw_mouth(x, y):
     color(239, 69, 19)
     pu()
     goto(x, y)
@@ -178,7 +178,7 @@ def mouth(x, y):
     circle(40, 80)
 
 
-def body(x, y):
+def draw_body(x, y):
     color("red", (255, 99, 71))
     pu()
     goto(x, y)
@@ -199,7 +199,7 @@ def body(x, y):
     end_fill()
 
 
-def hands(x, y):
+def draw_hands(x, y):
     color((255, 155, 192))
     pu()
     goto(x, y)
@@ -233,7 +233,7 @@ def hands(x, y):
     circle(20, 90)
 
 
-def foot(x, y):
+def draw_foot(x, y):
     pensize(10)
     color((240, 128, 128))
     pu()
@@ -262,7 +262,7 @@ def foot(x, y):
     fd(20)
 
 
-def tail(x, y):
+def draw_tail(x, y):
     pensize(4)
     color((255, 155, 192))
     pu()
@@ -285,14 +285,14 @@ def setting():
 
 if __name__ == '__main__':
     setting()
-    nose(-100, 100)
-    head(-69, 167)
-    ears(0, 160)
-    eyes(0, 140)
-    cheek(80, 10)
-    mouth(-20, 30)
-    body(-32, -8)
-    hands(-56, -45)
-    foot(2, -177)
-    tail(148, -155)
+    draw_nose(-100, 100)
+    draw_head(-69, 167)
+    draw_ears(0, 160)
+    draw_eyes(0, 140)
+    draw_cheek(80, 10)
+    draw_mouth(-20, 30)
+    draw_body(-32, -8)
+    draw_hands(-56, -45)
+    draw_foot(2, -177)
+    draw_tail(148, -155)
     done()
