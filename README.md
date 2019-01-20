@@ -4,4 +4,4 @@
 
 效果图
 
-![demo](/Users/sunshuai/Desktop/peiqi/demo.png)
+![demo](demo.png)
